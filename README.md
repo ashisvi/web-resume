@@ -1,2 +1,2 @@
 # web-resume
-Online web resume (Sparta Hackathon)
+Online web resume (Sparta Coding Club)

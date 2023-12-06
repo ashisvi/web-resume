@@ -23,7 +23,7 @@
     <div class="container">
         <!-- Navbar -->
         <header
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
             <div class="col-md-3 mb-2 mb-md-0 fw-bold fs-4">
                 <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
                     <span class="text-primary">Port</span>
@@ -33,39 +33,39 @@
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-3 link-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-3">About</a></li>
-                <li><a href="#" class="nav-link px-3">Projects</a></li>
-                <li><a href="#" class="nav-link px-3">Contact</a></li>
+                <li><a href="#about" class="nav-link px-3">About</a></li>
+                <li><a href="#projects" class="nav-link px-3">Projects</a></li>
             </ul>
 
             <div class="col-md-3 text-end">
                 <button type="button" class="btn btn-primary">Resume</button>
             </div>
         </header>
+    </div>
 
-        <!-- Hero section -->
+    <!-- Hero section -->
 
-        <section class="hero-section px-4 py-5 my-5 text-center">
-            <h1 class="hero-section__heading display-4 fw-bolder text-body-emphasis col-lg-8 mx-auto">
+    <section class="hero-section px-4 py-5 text-center">
+        <div class="container">
+            <h1 class="hero-section__heading text-white display-4 fw-bolder col-lg-8 mx-auto">
                 Hello, I'm
                 <div class="text-primary">Ashish Vishwakarma</div>
             </h1>
             <div class="col-lg-9 mx-auto">
-                <p class="lead my-4">I am a web developer with expertise in JavaScript and ReactJS. I have built
+                <p class="lead my-4 text-white">I am a web developer with expertise in JavaScript and ReactJS. I have
+                    built
                     numerous projects, demonstrating my passion for creating exceptional web experiences.</p>
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">About me</button>
+                <a type="button" href="#about" class="btn btn-primary btn-lg px-4 gap-3">About me</a>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <div class="about">
-        <div class="d-flex justify-content-center align-items-center container mx-auto">
-            <div class="mb-sm-0" style="width: 50%;">
-                <img src="./Assets/image.jpg" alt="" height="500px">
-            </div>
-            <div class="mb-sm-0" style="width: 50%;">
-                <h1 class="fw-bold text-center my-4">About me</h1>
-                <p>
+    <div id="about" class="mb-5">
+        <h1 class="fw-bold text-center text-primary my-4">About me</h1>
+        <div class="d-sm-flex justify-content-center align-items-center container mx-auto">
+            <div class="mb-sm-0 col-sm-6">
+
+                <p class="text-justify">
                     I am web developer with expertise in JavaScript and React. I have crafted numerous projects.
                     demonstrating my passion for creating exceptional web experiences. I am currently working on
                     personal projects.
@@ -75,16 +75,20 @@
                     technologies.
                 </p>
             </div>
+
+            <div class="mb-sm-0 col-sm-6 text-center">
+                <img src="./Assets/image.jpg" alt="" height="350px" class="shadow">
+            </div>
         </div>
     </div>
 
     <!-- Projects -->
 
-    <section class="projects">
-        <h1 class="fw-bold text-center mb-4">Projects</h1>
+    <section id="projects">
+        <h1 class="fw-bold text-center mb-4 text-primary">Projects</h1>
         <div class="row container mx-auto">
             <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
+                <div class="card shadow">
                     <img src="https://ashisvi.netlify.app/images/note-app.png" class="card-img-top" alt="Note app">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-primary">Notes App</h5>
@@ -105,14 +109,13 @@
                 </div>
             </div>
             <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
+                <div class="card shadow">
                     <img src="https://ashisvi.netlify.app/images/todo-app.png" class="card-img-top" alt="Note app">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-primary">ToDo App</h5>
-                        <p class="card-text">A simple note application made using ReactJS and JavaScript. This
-                            application
-                            allow user to create, delete and edit notes. This application also support Markdown
-                            formating.
+                        <p class="card-text">A ToDo application made using React and Bootstrap allow user to add and
+                            delete task. Local storage has been used to store data in this application. It keeps
+                            complete and incomplete tasks separate.
                         </p>
                     </div>
                     <div class="icons my-2 mx-4">
@@ -132,26 +135,23 @@
 
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <!-- <span class="mb-3 mb-md-0 text-body-secondary">+91 9977258377</span> -->
+            
+            <div class="col-md-4 align-items-center">
                 <span class="mb-3 mb-md-0 text-body-secondary">Email: ashisvi7519@gmail.com</span>
+                <br />
+                 <span class="mb-3 mb-md-0 text-body-secondary">Phone: +91 9977258377</span>
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3">
-                    <a class="text-body-secondary text-decoration-none mx-2" href="#">
+                    <a class="text-body-secondary text-decoration-none mx-2" href="https://www.twitter.com/ashisvi">
                         <i class="bi bi-twitter-x"></i>
                     </a>
-                    <a class="text-body-secondary text-decoration-none mx-2" href="#">
+                    <a class="text-body-secondary text-decoration-none mx-2" href="https://www.instagram.com/ashisvi_">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a class="text-body-secondary text-decoration-none mx-2" href="#">
-                        <i class="bi bi-facebook"></i>
+                    <a class="text-body-secondary text-decoration-none mx-2" href="https://www.link3din.com/in/ashisvi">
+                        <i class="bi bi-linkedin"></i>
                     </a>
                 </li>
             </ul>
