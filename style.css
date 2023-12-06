@@ -2,6 +2,12 @@
     font-family: 'Space Grotesk', sans-serif;;
 }
 
-svg {
-    text: black;
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.icons .icon {
+    color: black;
 }

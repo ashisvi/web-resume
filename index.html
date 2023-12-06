@@ -19,7 +19,7 @@
     <title>Bootstrap demo</title>
 </head>
 
-<body class="pb-5">
+<body>
     <div class="container">
         <!-- Navbar -->
         <header
@@ -58,24 +58,104 @@
         </section>
     </div>
 
+    <div class="about">
+        <div class="d-flex justify-content-center align-items-center container mx-auto">
+            <div class="mb-sm-0" style="width: 50%;">
+                <img src="./Assets/image.jpg" alt="" height="500px">
+            </div>
+            <div class="mb-sm-0" style="width: 50%;">
+                <h1 class="fw-bold text-center my-4">About me</h1>
+                <p>
+                    I am web developer with expertise in JavaScript and React. I have crafted numerous projects.
+                    demonstrating my passion for creating exceptional web experiences. I am currently working on
+                    personal projects.
+
+                    My journey doesn't end with these achievements. I'm committed to continuous improvement and embrace
+                    the dynamic world of web development by constantly upgrading my skills and learning new
+                    technologies.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <!-- Projects -->
 
-    <div class="row container mx-auto">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-            <div class="card">
-                <img src="https://ashisvi.netlify.app/images/note-app.png" class="card-img-top" alt="Note app">
-                <div class="card-body">
-                    <p class="card-text">A simple note application made using ReactJS and JavaScript. This application
-                        allow user to create, delete and edit notes. This application also support Markdown formating.
-                    </p>
+    <section class="projects">
+        <h1 class="fw-bold text-center mb-4">Projects</h1>
+        <div class="row container mx-auto">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <img src="https://ashisvi.netlify.app/images/note-app.png" class="card-img-top" alt="Note app">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">Notes App</h5>
+                        <p class="card-text">A simple note application made using ReactJS and JavaScript. This
+                            application
+                            allow user to create, delete and edit notes. This application also support Markdown
+                            formating.
+                        </p>
+                    </div>
+                    <div class="icons my-2 mx-4">
+                        <a class="icon" href="">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a class="icon" href="">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="">
-                    <a class="icon" href="">
-                        <i class="bi bi-github"></i>
-                    </a>
+            </div>
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <img src="https://ashisvi.netlify.app/images/todo-app.png" class="card-img-top" alt="Note app">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-primary">ToDo App</h5>
+                        <p class="card-text">A simple note application made using ReactJS and JavaScript. This
+                            application
+                            allow user to create, delete and edit notes. This application also support Markdown
+                            formating.
+                        </p>
+                    </div>
+                    <div class="icons my-2 mx-4">
+                        <a class="icon" href="">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a class="icon" href="">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- footer -->
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <!-- <span class="mb-3 mb-md-0 text-body-secondary">+91 9977258377</span> -->
+                <span class="mb-3 mb-md-0 text-body-secondary">Email: ashisvi7519@gmail.com</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-body-secondary text-decoration-none mx-2" href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a class="text-body-secondary text-decoration-none mx-2" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="text-body-secondary text-decoration-none mx-2" href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </div>
 
     <!-- Bootstrap Script -->
